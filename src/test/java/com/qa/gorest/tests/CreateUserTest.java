@@ -39,7 +39,7 @@ public class CreateUserTest extends BaseTest {
 		Integer userId = restClient.post(GOREST_ENDPOINT, "json", user, true, true).then().log().all().assertThat()
 				.statusCode(201).extract().response().path("id");
 
-		System.out.println(userId);
+		System.out.println("User ID "+userId);
 
 		RestClient restClientGet = new RestClient(prop, baseURI);
 
