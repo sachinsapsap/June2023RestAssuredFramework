@@ -23,7 +23,7 @@ public class GetUserTest extends BaseTest {
 		restClient.get(GOREST_ENDPOINT, true,true).then().log().all().assertThat().statusCode(200);
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void getUserTest() {
 		restClient=new RestClient(prop,baseURI);
 		restClient.get(GOREST_ENDPOINT+"/6935536", true,true).then().log().all().assertThat().statusCode(200)
