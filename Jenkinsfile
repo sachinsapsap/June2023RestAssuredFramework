@@ -18,7 +18,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/sachinsapsap/June2023RestAssuredFramework.git'
-                    sh "mvn clean install"
+                    bat "mvn clean install"
                 }
             }
         }
