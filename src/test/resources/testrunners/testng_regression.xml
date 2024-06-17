@@ -4,30 +4,30 @@
 <suite name="API Regression Suite" thread-count="1"
 	parallel="tests" verbose="4">
 
-	<!--  <test name="Go Rest Get User Test">
+	 <test name="Go Rest Get User Test">
 		<parameter name="baseURI" value="https://gorest.co.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.GetUserTest" />
 		</classes>
-	</test> -->
+	</test>
 	 <test name="Go Rest Create User Test">
 		<parameter name="baseURI" value="https://gorest.co.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.CreateUserTest" />
 		</classes>
 	</test>
-	<!--  <test name="Circuit API Test">
+	  <test name="Circuit API Test">
 		<parameter name="baseURI" value="http://ergast.com" />
 		<classes>
 			<class name="com.qa.gorest.tests.CircuitTest" />
 		</classes>
-	</test> -->
-	<!--  <test name="Req Res API Test">
+	</test>
+	 <test name="Req Res API Test">
 		<parameter name="baseURI" value="https://reqres.in" />
 		<classes>
 			<class name="com.qa.gorest.tests.ReqResTest" />
 		</classes>
-	</test>-->
+	</test>
 	<!--  <test name="Amadeus Flight API Test">
 		<parameter name="baseURI" value="https://test.api.amadeus.com" />
 		<parameter name="grantType" value="client_credentials" />
